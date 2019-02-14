@@ -1,0 +1,483 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont{Fontin Regular}[SmallCapsFont = Fontin SmallCaps]
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin Regular}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\pagestyle{empty} % Removes page numbering
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$-$}
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+	\parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+		\begin{shaded}
+			\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+		\end{shaded}
+	}\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+	\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+		\par{\centering{\huge Kazem Bakian Dogaheh}\bigskip\par}
+
+	%-----------------------------------------------------------
+	%Insert IIT Madras Logo 
+%	\begin{tabular*}{4in}{l@{\extracolsep{\fill}}r}
+		%-----------------------------------------------------------  
+%	\par{\centering{\huge Kazem Bakian Dogaheh}\bigskip\par}&\\
+%	\end{tabular*}
+%	\\
+	
+
+
+
+
+
+\color{blue}
+\section{Personal Data}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\color{black}
+Address: Photonics Research Laboratory, School of Electrical and Computer Engineering, Center of Excellence on Applied  Electromagnetics Systems, University of Tehran, Tehran, Iran\\
+\ P.O.Box: 14395-515 \\
+\ Email: \href{mailto:kazembakian94@gmail.com}{kazembakian94@gmail.com}
+\color{blue}
+\section{Education}
+\color{Black}
+
+
+	{\bf B.Sc. In Electrical Engineering} \hfill {\bf Tehran, Iran}\\
+	 {University of Tehran}  \hfill (September 2012- Present)
+	 	
+	{\normalsize\textsc{Current GPA}: {\bf 17.16/20 }}\\
+
+	
+	{\bf High school diploma in Mathematics and Physics} \hfill {\bf Roodbar, Iran}\\
+	{Taleghani High School } \hfill (2011 - 2012)
+
+	\normalsize\textsc{GPA}: \textbf{18/20}
+
+\color{blue}
+\section{Research Interests}
+\color{Black}
+\begin{itemize}
+%	\item Photonics and its Applications to Nano- and Bio-technology
+%\begin{multicols}{2}
+	
+%	\item Integrated Optics and Free Space Optical System Design
+	%	\item Medical Diagnostic and Medical Imaging
+	%	\vfill
+	%		\columnbreak
+		%		\hspace{2sn	\item Optical Microscopy
+		%			\item Optical Spectroscopy 
+					
+	
+%	\item {\bf Electromganetics, High Frequency Electronics and Communications}
+%	\begin{itemize}
+\item Applied Electromagnetics and EM Modeling
+\item Bio-Electromagnetics
+%\item Instrumentation for Wide Bandwidth Radio Astronomy
+%	\item Electronics and Photonics Integrated circuits and its application in Bio-technology, Communication
+%	\item  RF, Microwave and mm-Wave Integrated Circuits and System design.
+%	\item Communication-Inspired RADAR and Imaging Systems
+	\item Medical diagnostic, Therapeutics and  Medical Imaging
+
+	%	\end{itemize}
+	%	\item {\bf Optics, Photonics and THz}
+	%\end{multicols}
+	%	\begin{itemize}
+			
+	%	\item Photonics and its Applications to Nano- and Bio-technology
+	%		\item Medical Diagnostic and Medical Imaging
+	%		\item Optical Microscopy
+	%		\item Optical Spectroscopy 
+%	\item Integrated Optics and Free Space Optical System Design 
+			%\item Optical Communication
+			
+		
+	\end{itemize}
+
+\color{blue}
+\section{Honors and Awards }
+
+\color{Black}
+\begin{itemize}
+\item
+Ranked 74th among more than 125,000  participants in the national university entrance exam  \hfill(2012)
+	\item
+Ranked first in provincial chemical laboratory olympiad in Guilan  \hfill(2011)  
+\item
+Semi-finalist in Iranain national chemistry olympiad \hfill(2011) 
+\end{itemize}
+\color{blue}
+%\color{blue}
+%\section{Publications}
+%\color{Black}
+
+%1. \textbf{K.Bakian Dogaheh}, A.Nooramin, M.Rahannade, H.Mattaji, ``A Novel Structure of Annular-Ring Slot Antenna (ARSA) for Covering Bluetooth/WiMAX/HiperLAN/2/WLAN/ ITU/Ku " to be % to IEEE Antenna and Propagation Letter
+%2. \textbf{K.Bakian Dogaheh}, A.Elahi, M.Shahabadi, ``Optical Spectroscopy with Digital Light Processor (DLP)", Under Preparation\\
+%		&  \textit{J. Opt. Soc. Amer. B}, vol. 32, no. 9, pp.  1843--1850, Sept. 2016.\\
+%3. \textbf{K.Bakian Dogaheh}, H.Shirinabadi, M.Ahamdi-Broujeni, K.Mohammadpour-Aghdam ``Design of Wide-Beam Slot Array Antenna",Under Prepration\\
+
+\color{blue}
+\section{Research Experience}
+\color{Black}
+\begin{itemize}
+\item
+		 \textbf{Antenna Research Laboratory}  \hfill{(February 2016- present)} %\\{Advisor: \href{http://ece.ut.ac.ir/en/users/mohammadpour}{Prof. K. Mohammadpour-Aghdam}}
+		\begin{itemize}
+			\item
+			{Design of an imaging system which capable of detecting and locating alive victims trapped under the collapsed buildings debris }\\
+		\end{itemize}
+		\item
+		\textbf{Photonics Research Laboratory}  \hfill{(January 2015-Present) } %{Advisor: \href{http://ece.ut.ac.ir/en/users/shahabadi}{Prof. M. Shahabadi}}
+	\begin{itemize}
+		\item
+		{Design and implementation of a Digital Light Processor (DLP) driver for  spectroscopy applications}    
+	
+			\item
+	Analysis of a dual mode surface plasmon resonance for increasing the sensitivity of surface plasmon resonance sensor in a Kretschmann configuration
+	%		\item 
+	%	Mechanical vibration detection with Michelson configuration\\
+			\end{itemize}
+	
+%	\item
+%	\textbf{Nano-Bio Electronics  Laboratory}\hfill{(July - December 2015)}  %{Advisors: \href{http://ece.ut.ac.ir/en/users/abdolahad}{Prof. M. Abdolahad }, %\href{http://ece.ut.ac.ir/en/users/shahabadi}{Prof. M. Shahabadi}}
+	%	\begin{itemize}
+	%			\item
+	%		{  Monitor the growth of breath cancer cell using SPR sensor }	
+	%		\\	
+	%	\end{itemize}
+	
+\end{itemize}
+\color{blue}
+\section{Teaching Assistant Experience}
+\color{Black}
+	\begin{itemize}
+	%	\begin{tabular}{ll}
+		%	\begin{itemize}
+	%			
+	%	\textbf{(2016-2017)}
+	%	&\hspace{0.5cm}{Advanced Theory of Electromagnetic(Graduate)}, 
+	%	{Communication Circuits}, {Microwave Engineering I} \\
+%	\textbf{(2015-2016)}
+%	&\hspace{0.5cm}{Communication Circuits}, {Microwave Engineering I}, {Antenna Engineering I}, {Engineering Mathematics} \\	
+	%	\textbf{(2014-2015)}
+	%	&\hspace{0.5cm}{Electromangentics Fiedls and Waves}, {Electronics I}, {Signals and Systems Analysis} \\	
+	%	\item {Communication Circuits}\hspace{8.55 cm} (Fall 2015 \& 2016, Spring 2016)
+	%	\item {Microwave Engineering I}\hspace{10.4 cm} (Fall 2015 \& 2016)
+	%	\item {Advanced Theory of Electromagnetic(Graduate)}\hspace{8.01cm} (Fall 2016) 
+	%	\item {Antenna Engineering I}\hspace{11.45 cm} (Spring 2016)
+	%	\item {Engineering Mathematics}\hspace{9.5 cm} (Fall 2015, Spring 2016)
+	%	\item {Electromagnteics Fields and Waves}\hspace{8.05 cm} (Fall 2014, Spring 2015) 
+	%	\item {Signals and Systems Analysis}\hspace{10.45 cm} (Spring 2015)
+	%	\item {Electronics I}\hspace{13.45 cm} (Fall 2014)
+	\item	\textbf{Theory of Electromagnetics(Graduate)}(Fall),
+	 \textbf{Communication Circuits}(Fall), \hfill {(2016-2017)}\\
+\textbf{Microwave Engineering I}(Fall), \textbf{Electromagnetics}(Fall)
+	\item	\textbf{Communication Circuits}(Fall, Spring), \textbf{Engineering Mathematics}(Fall, Spring), 
+	\hfill {(2015-2016)}\\
+	 \textbf{Microwave Engineering I}(Fall), \textbf{Antenna Engineering I}(Spring),
+	
+		\item	\textbf{Electromagnteics Fields and Waves}(Fall, Spring), \textbf{Signals and Systems Analysis}(Spring),	\hfill {(2014-2015)}\\
+		 \textbf{Electronics I}(Fall)
+	
+	
+%\end{tabular}
+	\end{itemize}
+	
+
+
+\color{blue}
+\section{Professional Experience}
+\color{Black}
+\begin{itemize}
+%	\item Farhikhtegan Farafan Faez(4F)(Start Up Company)\hfill {(April 2016-Present)}\\
+%		\begin{tabular}{lr}
+	%			{\bf Technical Manager, } Head of RF and Digital Circuits and Systems Group.&\\
+	%			{\bf Staff Engineer, } Design and implementation of High frequency, and Digital Printed circuits Board. &\\
+	%			 \end{tabular}
+				 
+	%	\item \href{http://prl.ut.ac.ir/}{Photonics Research Lab}, {Fonon Ertebatat Sayyar}\hfill  (May-October 2016)  \\
+	%	\begin{tabular}{lr}
+	%	{\bf Research Staff, } RF and Microwave Circuits and System Design for Cellular Communications Systems &\\	
+	%	Supervisors:\href{http://ece.ut.ac.ir/en/users/shahabadi}{Prof. M. Shahabadi}\\
+%	\end{tabular}
+	%	\begin{itemize}
+	%		\item
+	%		Feasibility study of, design a LTE macro, micro stand alone Base Station RF Front-End and write a proposal worths approximately 300,000 \$	
+	%		\item
+	%		Design, implement and measurements of  high isolation(up to 44dB ) power combiner for GSM BTS(It had unique reslut and there isn't any similar type in the world.)
+		
+	%	\end{itemize}
+		\item 
+		\href{http://antennalab.ut.ac.ir/}{Antenna Type Approval Laboratory} \hspace{8.2cm}  (June 2015-Present)\\
+		\begin{tabular}{ll}
+				{\bf Technical Staff, } RF, Microwave and MM-Wave Characterization & \\
+			%	Supervisors:\href{http://ece.ut.ac.ir/en/users/faraji}{Prof. R. Faraji-dana}, \href{http://ece.ut.ac.ir/en/users/mohammadpour}{Prof. K. Mohammadpour-Aghdam}& \\
+		\end{tabular}
+		 \begin{itemize}
+	 	\item
+	 	 Hands on Experience in using RF, Microwave and MM-Wave measurement equipments 
+	 	 
+	 	 \item 
+	 	 Familiar with general requirements of testing and calibration lab standard  (ISO 17025)
+	 
+\end{itemize}
+%\item 
+%\href{http://www.raganparto.com/Pos.html}{Ragan Parto Pars CO.} \hspace{9 cm}(September-November 2015) \\
+%	\begin{tabular}{lr}
+%		{\bf Antenna Engineer}& \\
+%	\end{tabular}
+%	\begin{itemize} 	
+%			\item
+%			Design of an educational antenna kit with its instructor and student guide include ( Wire antenna, Helix 
+%			 antenna and several microstrip patch antenna ) and an envelope detector  \\	
+%				\end{itemize}
+%					
+	\end{itemize}
+%\color{blue}
+%----------------------------------------------------------------------------------------
+% Thechnicals  SKILLS 
+%----------------------------------------------------------------------------------------
+\color{blue}
+\section{Technicals Skills}
+\color{Black}
+\begin{itemize}
+	\begin{multicols}{2}
+			\item	{\bf Labatory skills}
+		
+					\begin{itemize}
+						\item 	Free space optical alignment 
+						\item	Optical spectrometer,Tunable lasers 
+						\item	Opto-mechanical structure
+						\item
+						Familiar with on wafer characterization using cascade probe station
+						\item
+						Experienced working in anechoic chamber and antenna pattern measurement				
+					\end{itemize} 
+
+	\item
+	{\bf Biology }
+	\begin{itemize}
+		\item
+		Familiar with Biological Cell Culture
+	\end{itemize}
+	\vfill
+	\columnbreak
+			\item
+			{\bf Computational Electromagnetic Software}
+					\begin{itemize}
+					\item
+					COMSOL Multiphysics, Lumerical, Ansoft HFSS, Agilent ADS
+					\end{itemize}
+					\item
+					{\bf Programming}
+					\begin{itemize}
+						\item MATLAB, Microsoft Visual Studio C++
+					\end{itemize}
+						
+						\item
+						{\bf Word Processing}
+						\begin{itemize}
+							\item
+							LATEX, Microsoft Office
+						\end{itemize}
+			\end{multicols}
+	
+		
+	\end{itemize}
+	\vspace{2cm}
+		\color{blue}
+\section{Language Proficiency}
+		\color{Black}
+					\begin{multicols}{2}
+						\begin{itemize}
+			\item
+				\textsc{Persian:}  Mother tongue
+				
+			\item
+			\textsc{English:} Fluent 
+			\end{itemize}
+		 	\end{multicols}
+					\begin{itemize}
+							\item
+			\textsc{TOEFL IBT}: {\bf84/120} (Reading:{\bf21}, Listening:{\bf22}, Speaking:{\bf18}, Writing:{\bf23})
+				\item
+		
+			\textsc{GRE Revised General Test}: (Quantitative Reasoning:{\bf162} ,	Verbal Reasoning:{\bf136} , Analytical Writing:{\bf2.5})
+				
+				
+			
+		\end{itemize}
+
+\color{blue}	
+\section{Relevant Courses  and Grades }
+\color{Black}
+\begin{itemize}
+	\begin{multicols}{2}
+		\item \textbf{Graduate}
+		\begin{itemize}
+			\item
+			{Theory of Electromagnetics :(17.6/20)}
+			\item
+			{Introduction to Radar Systems :(19.4/20)}
+			\item
+			{Active Microwave Circuits :(Audited)}
+			\item
+			{Fundamentals of Photonics :(Audited)}
+			\item
+			RFIC :(Audited)	
+		\end{itemize}
+		\vfill
+		\columnbreak
+		\item \textbf{Undergraduate}
+	\begin{itemize}
+			\item
+			{Communication Circuits :(19.75/20)}
+			\item
+			{Microwave Engineering I :(18.6/20)}
+			\item
+			{Electromagnetic Fields and Wave : (18.1/20)}
+			\item
+			{Electromagnetics :(18.8/20)}
+			\item
+			{Antenna Engineering I :(17.4/20)}
+			\item
+			{Electronics III :(17/20)}
+	\end{itemize}
+	\end{multicols}
+\end{itemize}        
+%\begin{tabular}{ll}
+ 
+%\hspace{0.5 cm} \bullet$  { \bf  Graduate \ Course}  &{} \\
+%[0.1 cm]
+%\hspace{.1cm}{Advanced Theory of Electromagnetics :(17.6/20)}&\hspace{2cm}{Introduction to Radar Systems :(19.4/20)}\\
+%\hspace{.1 cm}{Numerical Techniques in Electroamagnetic :(this semester)}&\hspace{2cm}{Active Microwave Circuits :(this semester)}\\
+%\hspace{.1cm}{Microwave II : (Audited)}&\hspace{2cm}{Fundementals of Photonics :(Audited)}\\
+%\hspace{.1 cm}{RFIC :(Audited)}&\hspace{2cm}{Fundamentals of Photonics :(Audited)}\\
+%\hspace{.1 cm}{RFIC :(Audited)}&\hspace{2cm}{Active Microwave Circuits :(Audited)}\\
+
+%\\
+
+% $\bullet$  { \bf  Undergraduate \ Course}  &{} \\
+% [0.1 cm]
+
+%\hspace{.1cm}{Communication Circuits :(19.75/20)}  & \hspace{2cm}{Microwave Engineering I :(18.6/20)}\\
+%\hspace{.1cm}{Electromagnetic Fields and Wave : (18.1/20)}  & \hspace{2cm}{Electromagnetics :(18.8/20)}\\
+%\hspace{.1cm}{Antenna Engineering I :(17.4/20)}& \hspace{2cm}{Electronics III :(17/20)}\\
+%\hspace{.1cm}{Signal And Systems Analysis :(19/20)}& \hspace{2cm}{Electronics II :(16.8/20)}\\
+%\hspace{.1cm}{Electrical Circuits I :(17.7/20)}& \hspace{2cm}{Electronics I :(19.4/20)}\\
+%\hspace{.1cm}{Wireless Communication}  & \hspace{2cm}{Introduction to Biomedical Engineering}\\
+%\end{tabular}
+
+\color{blue}
+\section{Selected Course Projects}
+\color{Black}
+\begin{itemize}
+	\item
+	\textbf{Analysis of a partially filled waveguide and waveguides discontinuity using MATLAB}\\
+	 Theory of Electromagnetic course
+\item
+%	\textbf{Design of a Monopulse Active Radar Seeker at X-Band mounted on missile }\\
+%	Introduction to Radar Systems, Under the supervision of Dr. K.Mohammad Pour-Aghdam
+%	\item
+	\textbf{Design and Simulation of an 5.17 - 5.33 VCO Colpitts oscillator and a balanced mixer at IEEE802.11a/b/g Standard using  ADS  in 0.18 um technology  }\\
+	Communications Circuits course
+	\item
+	\textbf{Design and Simulation of high performance low power fully differential telescopic cascade amplifier using HSPICE and ADS  in 0.18 um technology   }\\
+	Electronics III course
+	\item
+	\textbf{Design and simulation of C-band Substrate Integrated Waveguide directional coupler Using HFSS  }\\
+	Microwave Laboratory course
+		\item
+		\textbf{Simulation of Digital Modulation Methods (PSK, FSK, ASK, QAM) via MATLAB}\\
+		Digital Communications Laboratory course
+		\item
+		\textbf{Simulation of an OFDM and a MIMO System via MATLAB}\\
+		Wireless Communication course
+	\end{itemize}
+\color{blue}
+\section{Academic and Professional References}
+\color{Black}
+\begin{tabular}{ll}
+		
+		
+		\textsc{\href{http://ece.ut.ac.ir/en/users/shahabadi}{\bf{Mahmoud Shahabadi}}}&    \  Professor, School Of ECE, University of Tehran,Email:\textsc{\href{mailto:Shahabad@ut.ac.ir}{\bf{shahabad@ut.ac.ir}}}\\
+		
+		\textsc{\href{http://ece.ut.ac.ir/en/users/mohammadpour}{\bf{Karim MohammadPour-Aghdam}}}&  \ Assistant Professor, School Of ECE, University of Tehran,Email:\textsc{\href{mailto:kaghdam@ut.ac.ir}{\bf{kaghdam@ut.ac.ir}}}\\
+	
+		\textsc{\href{http://ece.ut.ac.ir/en/users/kamarei}{\bf{Mahmoud Kamarei}}}&
+		\ Professor, School Of ECE, University of Tehran,Email:\textsc{\href{mailto:kamarei@ut.ac.ir}{\bf{kamarei@ut.ac.ir}}}\\
+		%The Dean,College of Engineering,University of Tehran. 
+		%\item
+		
+		\textsc{\href{http://ece.ut.ac.ir/en/users/faraji}{\bf{Reza Faraji-dana}}}&
+		    \ Professor, School Of ECE, University of Tehran,Email:\textsc{\href{mailto:reza@ut.ac.ir}{\bf{reza@ut.ac.ir}}}\\
+
+	
+	%\item
+%	\textsc{\href{http://ece.ut.ac.ir/en/users/dehmollaian}{\bf{Mojtaba Dehmollaian}}}
+%			Assistant Professor, School Of ECE, University of Tehran,Email:\textsc{\href{mailto:m.dehmollaian@ ut.ac.ir}{\bf{m.dehmollaian@ ut.ac.ir}}}
+
+			\end{tabular}
+				
+
+\end{document}

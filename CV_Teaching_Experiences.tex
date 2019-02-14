@@ -1,0 +1,102 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont{Fontin Regular}[SmallCapsFont = Fontin SmallCaps]
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin Regular}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\pagestyle{empty} % Removes page numbering
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$-$}
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+\color{blue}
+\section{University of Tehran Teaching Experience}
+\color{Black}
+\begin{itemize}
+	%	\begin{tabular}{ll}
+	%	\begin{itemize}
+	%			
+	%	\textbf{(2016-2017)}
+	%	&\hspace{0.5cm}{Advanced Theory of Electromagnetic(Graduate)}, 
+	%	{Communication Circuits}, {Microwave Engineering I} \\
+	%	\textbf{(2015-2016)}
+	%	&\hspace{0.5cm}{Communication Circuits}, {Microwave Engineering I}, {Antenna Engineering I}, {Engineering Mathematics} \\	
+	%	\textbf{(2014-2015)}
+	%	&\hspace{0.5cm}{Electromangentics Fiedls and Waves}, {Electronics I}, {Signals and Systems Analysis} \\	
+	%	\item {Communication Circuits}\hspace{8.55 cm} (Fall 2015 \& 2016, Spring 2016)
+	%	\item {Microwave Engineering I}\hspace{10.4 cm} (Fall 2015 \& 2016)
+	%	\item {Advanced Theory of Electromagnetic(Graduate)}\hspace{8.01cm} (Fall 2016) 
+	%	\item {Antenna Engineering I}\hspace{11.45 cm} (Spring 2016)
+	%	\item {Engineering Mathematics}\hspace{9.5 cm} (Fall 2015, Spring 2016)
+	%	\item {Electromagnteics Fields and Waves}\hspace{8.05 cm} (Fall 2014, Spring 2015) 
+	%	\item {Signals and Systems Analysis}\hspace{10.45 cm} (Spring 2015)
+	%	\item {Electronics I}\hspace{13.45 cm} (Fall 2014)
+	
+	\item	
+		\textbf{Computer Network Lab } (Fall) 
+		\hfill {2018-2019}\\
+	
+	\item	
+		\textbf{Computer Network Lab } (Fall,Spring)
+		\hfill {2017-2018}\\	
+	
+	\item	
+		\textbf{Computer Network Lab } (Spring) 
+		\hfill {2016-2017}
+		
+	%\end{tabular}
+\end{itemize}
+
+
+
+
+\end{document}

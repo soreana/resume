@@ -1,0 +1,136 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont{Fontin Regular}[SmallCapsFont = Fontin SmallCaps]
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin Regular}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\pagestyle{empty} % Removes page numbering
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$-$}
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+	\parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+		\begin{shaded}
+			\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+		\end{shaded}
+	}\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+	\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+	\color{blue}	
+	\section{Relevant Graduate Courses}
+	\color{Black}
+
+
+	\begin{itemize}
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item
+				{Comutational Methods fo}
+				\item
+				{Microwave Engineering I}
+				\item
+				{Electromagnetic Fields and Wave}
+				\item
+				{Electromagnetics}
+				\item
+				{Antenna Engineering I}
+				\item
+				{Electronics III}
+			\end{itemize}
+			\vfill
+			\columnbreak
+			\item \textbf{Undergraduate}
+				\item \textbf{Univesity of Tehran}
+				\begin{itemize}
+					\item
+					{Advanced Theory of Electromagnetics}
+					\item
+					{Introduction to Radar Systems}
+					\item
+					{Active Microwave Circuits}
+				\end{itemize}
+		
+		\end{multicols}
+	\end{itemize}      
+		\end{itemize}
+		  
+	%\begin{tabular}{ll}
+	
+	%\hspace{0.5 cm} \bullet$  { \bf  Graduate \ Course}  &{} \\
+	%[0.1 cm]
+	%\hspace{.1cm}{Advanced Theory of Electromagnetics :(17.6/20)}&\hspace{2cm}{Introduction to Radar Systems :(19.4/20)}\\
+	%\hspace{.1 cm}{Numerical Techniques in Electroamagnetic :(this semester)}&\hspace{2cm}{Active Microwave Circuits :(this semester)}\\
+	%\hspace{.1cm}{Microwave II : (Audited)}&\hspace{2cm}{Fundementals of Photonics :(Audited)}\\
+	%\hspace{.1 cm}{RFIC :(Audited)}&\hspace{2cm}{Fundamentals of Photonics :(Audited)}\\
+	%\hspace{.1 cm}{RFIC :(Audited)}&\hspace{2cm}{Active Microwave Circuits :(Audited)}\\
+	
+	%\\
+	
+	% $\bullet$  { \bf  Undergraduate \ Course}  &{} \\
+	% [0.1 cm]
+	
+	%\hspace{.1cm}{Communication Circuits :(19.75/20)}  & \hspace{2cm}{Microwave Engineering I :(18.6/20)}\\
+	%\hspace{.1cm}{Electromagnetic Fields and Wave : (18.1/20)}  & \hspace{2cm}{Electromagnetics :(18.8/20)}\\
+	%\hspace{.1cm}{Antenna Engineering I :(17.4/20)}& \hspace{2cm}{Electronics III :(17/20)}\\
+	%\hspace{.1cm}{Signal And Systems Analysis :(19/20)}& \hspace{2cm}{Electronics II :(16.8/20)}\\
+	%\hspace{.1cm}{Electrical Circuits I :(17.7/20)}& \hspace{2cm}{Electronics I :(19.4/20)}\\
+	%\hspace{.1cm}{Wireless Communication}  & \hspace{2cm}{Introduction to Biomedical Engineering}\\
+	%\end{tabular}
+	
+
+\end{document}

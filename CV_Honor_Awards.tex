@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont{Fontin Regular}[SmallCapsFont = Fontin SmallCaps]
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin Regular}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multirow}
+\pagestyle{empty} % Removes page numbering
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$-$}
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+	\parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+		\begin{shaded}
+			\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+		\end{shaded}
+	}\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+	\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+\color{blue}
+\section{Honors and Awards }
+
+\color{Black}
+\begin{itemize}
+	\item
+	University of Southern California, Department of Electrical Engineering Research Assistantship \hfill 2017
+	\item
+		University of Michigan Ann-arbor, Department of Electrical Engineering Fellowship  \hfill 2017  
+
+\end{itemize}
+
+%\color{blue}
+%\section{Publications}
+%\color{Black}
+
+%1. \textbf{K.Bakian Dogaheh}, A.Nooramin, M.Rahannade, H.Mattaji, ``A Novel Structure of Annular-Ring Slot Antenna (ARSA) for Covering Bluetooth/WiMAX/HiperLAN/2/WLAN/ ITU/Ku " to be % to IEEE Antenna and Propagation Letter
+%2. \textbf{K.Bakian Dogaheh}, A.Elahi, M.Shahabadi, ``Optical Spectroscopy with Digital Light Processor (DLP)", Under Preparation\\
+%		&  \textit{J. Opt. Soc. Amer. B}, vol. 32, no. 9, pp.  1843--1850, Sept. 2016.\\
+%3. \textbf{K.Bakian Dogaheh}, H.Shirinabadi, M.Ahamdi-Broujeni, K.Mohammadpour-Aghdam ``Design of Wide-Beam Slot Array Antenna",Under Prepration\\
+
+
+\end{document}
