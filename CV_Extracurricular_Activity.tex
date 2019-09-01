@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
-\usepackage{standalone}
+
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
@@ -19,7 +19,7 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \usepackage{multicol}
 \usepackage{ragged2e}
@@ -29,7 +29,6 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{multirow}
-\usepackage{xcolor}
 \pagestyle{empty} % Removes page numbering
 
 \renewcommand{\labelitemi}{$\bullet$}
@@ -53,27 +52,75 @@
 \setlength{\topskip}{0in}
 \setlength{\voffset}{0.1in}
 
-\definecolor{blue(ryb)}{HTML}{001C8A}
-
 %-----------------------------------------------------------
 
 %-----------------------------------------------------------
+
 
 \begin{document}
+\color{blue}
+\section{Extracurricular Activity}
+\color{Black}
+\begin{itemize}
+	%	\begin{tabular}{ll}
+	%	\begin{itemize}
+	%			
+	%	\textbf{(2016-2017)}
+	%	&\hspace{0.5cm}{Advanced Theory of Electromagnetic(Graduate)}, 
+	%	{Communication Circuits}, {Microwave Engineering I} \\
+	%	\textbf{(2015-2016)}
+	%	&\hspace{0.5cm}{Communication Circuits}, {Microwave Engineering I}, {Antenna Engineering I}, {Engineering Mathematics} \\	
+	%	\textbf{(2014-2015)}
+	%	&\hspace{0.5cm}{Electromangentics Fiedls and Waves}, {Electronics I}, {Signals and Systems Analysis} \\	
+	%	\item {Communication Circuits}\hspace{8.55 cm} (Fall 2015 \& 2016, Spring 2016)
+	%	\item {Microwave Engineering I}\hspace{10.4 cm} (Fall 2015 \& 2016)
+	%	\item {Advanced Theory of Electromagnetic(Graduate)}\hspace{8.01cm} (Fall 2016) 
+	%	\item {Antenna Engineering I}\hspace{11.45 cm} (Spring 2016)
+	%	\item {Engineering Mathematics}\hspace{9.5 cm} (Fall 2015, Spring 2016)
+	%	\item {Electromagnteics Fields and Waves}\hspace{8.05 cm} (Fall 2014, Spring 2015) 
+	%	\item {Signals and Systems Analysis}\hspace{10.45 cm} (Spring 2015)
+	%	\item {Electronics I}\hspace{13.45 cm} (Fall 2014)
 	
-\par{\centering{\huge Sina Kashipazha}\bigskip\par}
-\input{CV_Personal}
-\input{CV_Education}
-\input{CV_Professional_Experiences}
-\input{CV_Research_Interest}
-\input{CV_Research_Experiences}
-%\input{CV_Teaching_Experiences}
-%\input{CV_TA_Experiences}
-\input{CV_Extracurricular_Activity}
-\input{CV_Technical_Skills}
-%\input{CV_Honor_Awards}
-%\input{CV_Language}
-%\input{CV_Course}
-\input{CV_Course_Project}
-%\input{CV_Refrences}
+	\item \textbf{Teaching}
+	\begin{itemize}
+		\item	
+		\textbf{Computer Network Lab } (Fall, Spring) 
+		\hfill {Jan 2017 - Jan 2019}
+	\end{itemize}
+
+	\item \textbf{Teaching Assistant (Graduate)}
+	\begin{itemize}
+		\item	
+			\textbf{Advanced Computer network} (Fall) 
+			\textbf{EXCEPT: Fall 2017} 
+			\hfill {Sep 2016 - Jan 2019}
+	\end{itemize}
+	
+	\item \textbf{Teaching Assistant (Undergraduate)}
+	\begin{itemize}
+		\item	
+			\textbf{Computer Network} (Fall, Spring)
+			\hfill {Jan 2016 - Jan 2019}
+			
+		\item	
+			\textbf{Operating System and Operating System Lab } (Fall,Spring)
+			\textbf{EXCEPT: Fall 2016} 
+			\hfill {Jan 2015 - Jun 2018}
+	
+		\item	
+			\textbf {Design and Implementation of Compiler} (Fall),
+			\hfill { Sep 2015 - Jan 2016}
+			
+		\item
+			\textbf {Formal Languages and Automata} (Fall)
+			\hfill { Sep 2014 - Jan 2015}
+			
+	\end{itemize}
+
+	%\end{tabular}
+\end{itemize}
+
+
+
+
 \end{document}
